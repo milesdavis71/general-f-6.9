@@ -1,0 +1,61 @@
+<style type="text/css">
+#float {
+    position: absolute;
+    right: calc(2.4rem + 1vw);
+    top: calc(1rem + 1vw);
+    font-size: calc(1rem + 1vw);
+    z-index: 10000;
+}
+</style>
+<a href="{{root}}referenciak.html">
+    <div class="button-tiny" id="float">✕</div>
+</a>
+<div class="callout">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            {{#each global.gallery.first}}
+            <div data-hash="{{slidenum}}" class="swiper-slide">
+                <div class="slide-title">{{imgtitle}}</div>
+                <img src="{{root}}assets/img/{{imglarge}}.jpg" />
+            </div>
+            {{/each}}
+            {{#each global.gallery.second}}
+            <div data-hash="{{slidenum}}" class="swiper-slide">
+                <div class="slide-title">{{imgtitle}}</div>
+                <img src="{{root}}assets/img/{{imglarge}}.jpg" />
+            </div>
+            {{/each}}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    hashNavigation: {
+        watchState: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    keyboard: {
+        enabled: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+</script>
+<script type="text/javascript">
+window.onkeyup = function(event) {
+    if (event.keyCode == 27) {
+        window.location.replace("http://general.hevesiistvan.nhely.hu/referenciak.html");
+    }
+};
+</script>

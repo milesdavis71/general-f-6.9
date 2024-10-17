@@ -1,0 +1,14 @@
+<div class="callout">
+    <h5 class="text-center">Társasházi portálunk</h5>
+    <p class="text-center">Belépés a társasházi portálra.</p>
+    <a href="https://www.tarsashazam.hu/logon.aspx?ReturnUrl=%2f" target="_blank" class="button expanded">Belépés</a>
+</div>
+<h5 class="text-center">Referenciáink</h5>
+{{#each global.gallery.first}}
+<div class="cell">
+    <div class="card">
+        <img class="thumbnail" src="{{root}}assets/img/{{imgsmall}}.jpg" alt="{{alt}}">
+        <p class="text-center">{{imgtitle}}</p>
+    </div>
+</div>
+{{/each}}

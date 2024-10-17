@@ -1,0 +1,6 @@
+.callout {
+  &::after {
+    content: "";
+    @include css-triangle(1rem, $secondary-color, down);
+  }
+}

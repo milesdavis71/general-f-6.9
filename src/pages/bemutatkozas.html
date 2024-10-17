@@ -1,0 +1,87 @@
+---
+title: Bemutatkozás
+---
+<div class="callout">
+    <h5 class="text-center">{{title}}</h5>
+    <hr style="margin: 0 0 0.7rem;">
+    <ul id="list2">
+        <li>Cégünk 1991-ben alakult, azóta kizárólag társasházkezeléssel foglalkozunk. Társasházaink kezelését több mint
+            30
+            éves tapasztalattal végezzük Budapest egész területén a tulajdonosok megelégedettségére. Az általunk kezelt 37 társasházban már több mint tíz éve mi látjuk el a kezelői feladatokat. </li>
+        <li>Kollegáink több évtizedes tudáson alapuló, teljeskörű, az adott ingatlan életkorától független műszaki, jogi, könyvelési és házkezelési szakértelemmel rendelkeznek. </li>
+        <li>
+            A társasházkezeléssel kapcsolatos speciális feladatok vagy problémák megoldásához partnereink sorában olyan vállalkozók, jogászok, műszaki szakértők állnak rendelkezésre, akik szintén kiemelkedő szaktudással rendelkeznek.
+        </li>
+    </ul>
+</div>
+<div class="callout primary">
+    <p class="text-center">
+        <strong>Legfontosabb alapelveink:</strong>
+    </p>
+    <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium" id="test-eq">
+        <div class="cell large-3">
+            <div class="callout" data-equalizer-watch>
+                <p class="text-center"><i class="fa fa-handshake" style="color: orange; font-size: 1.5rem;"></i><br>Bizalom
+                </p>
+            </div>
+        </div>
+        <div class="cell large-3">
+            <div class="callout" data-equalizer-watch>
+                <p class="text-center"><i class="fa fa-eye" style="color: orange; font-size: 1.5rem;"></i><br>Átláthatóság
+                </p>
+            </div>
+        </div>
+        <div class="cell large-3">
+            <div class="callout" data-equalizer-watch>
+                <p class="text-center"><i class="fa fa-badge-check" style="color: orange; font-size: 1.5rem;"></i><br>Felelősségteljes munkavégzés</p>
+            </div>
+        </div>
+        <div class="cell large-3">
+            <div class="callout" data-equalizer-watch>
+                <p class="text-center"><i class="fa fa-infinity" style="color: orange; font-size: 1.5rem;"></i><br>Hosszútávú
+                    együttműködés</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-x grid-margin-x">
+    {{#each global.bemutatkozas}}
+    <div class="cell large-6">
+        <div class="card">
+            <div class="card-divider">
+                <div class="cell text-center">
+                    <span style="color: orange; font-size: 2rem;">
+                        <i class="
+          {{this.icon}}
+          "></i>
+                    </span>
+                    <h6>{{this.title}}
+                    </h6>
+                </div>
+            </div>
+            <div class="card-section">
+                <p>
+                    {{#if this.text1}}
+                    {{this.text1}}
+                    {{/if}}
+                </p>
+                <p>
+                    {{#if this.text2}}
+                    {{this.text2}}
+                    {{/if}}
+                </p>
+                <p>
+                    {{#if this.text3}}
+                    {{this.text3}}
+                    {{/if}}
+                </p>
+                <p>
+                    {{#if this.text4}}
+                    {{this.text4}}
+                    {{/if}}
+                </p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

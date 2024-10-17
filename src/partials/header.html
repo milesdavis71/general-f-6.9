@@ -1,0 +1,69 @@
+<div class="data-sticky-container" data-sticky-container>
+    <div class="sticky" data-sticky data-sticky-on="small" data-options="marginTop:0;" style="width:100%">
+        <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">&emsp;Menü</div>
+            <div class="title-bar-right">
+                <a href="https://www.tarsashazam.hu/logon.aspx?ReturnUrl=%2f" target="_blank" style="color: orange"><u>Belépés a
+                        társasházi portálra</u></a>
+            </div>
+        </div>
+        <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+            <!-- Desktop top bar START -->
+            <div class="top-bar-left hide-for-small-only">
+                <ul class="menu menu-items-padding=3px">
+                    <li {{#ifpage 'index' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}index.html">
+                            Főoldal
+                        </a>
+                    </li>
+                    <li {{#ifpage 'bemutatkozas' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}bemutatkozas.html">Bemutatkozás
+                        </a>
+                    </li>
+                    <li {{#ifpage 'szolgaltatasok' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}szolgaltatasok.html">Szolgálatások
+                        </a>
+                    </li>
+                    <li {{#ifpage 'referenciak' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}referenciak.html">Referenciák
+                        </a>
+                    </li>
+                    <li {{#ifpage 'kapcsolatfelvetel' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}kapcsolatfelvetel.html">Kapcsolatfelvétel
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Desktop top bar END -->
+            <!-- Mobile top bar START -->
+            <div class="top-bar-left  show-for-small-only">
+                <ul class="vertical menu align-center">
+                    <li {{#ifpage 'index' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}index.html">
+                            Főoldal
+                        </a>
+                    </li>
+                    <li {{#ifpage 'bemutatkozas' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}bemutatkozas.html">Bemutatkozás
+                        </a>
+                    </li>
+                    <li {{#ifpage 'szolgaltatasok' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}szolgaltatasok.html">Szolgálatások
+                        </a>
+                    </li>
+                    <li {{#ifpage 'referenciak' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}referenciak.html">Referenciák
+                        </a>
+                    </li>
+                    <li {{#ifpage 'kapcsolatfelvetel' }} class="is-active" {{/ifpage}} style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <a href="{{root}}kapcsolatfelvetel.html">Kapcsolatfelvétel
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Mobile top bar END -->
+        </div>
+    </div>
+</div>
+<p></p>

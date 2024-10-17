@@ -1,0 +1,26 @@
+<div class="callout">
+    <h5 class="text-center">Referenciák </h5>
+    <!-- cells -->
+    <div class="grid-x grid-padding-x small-up-1 medium-up-3">
+        {{#each global.gallery.first}}
+        <div class="cell">
+            <div class="card">
+                <a href="{{root}}lapozo.html#{{slidenum}}">
+                    <img class="thumbnail" src="{{root}}assets/img/{{imgsmall}}.jpg" alt="{{alt}}">
+                </a>
+                <p class="text-center">{{imgtitle}}</p>
+            </div>
+        </div>
+        {{/each}}
+        {{#each global.gallery.second}}
+        <div class="cell">
+            <div class="card">
+                <a href="{{root}}lapozo.html#{{slidenum}}">
+                    <img class="thumbnail" src="{{root}}assets/img/{{imgsmall}}.jpg" alt="{{alt}}">
+                </a>
+                <p class="text-center">{{imgtitle}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
